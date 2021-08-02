@@ -15,7 +15,9 @@ export default function Home() {
       </Head>
 
       <header className="bg-gray-200 flex flex-col items-center w-52 self-center mt-5 rounded-lg justify-center">
-        <h1 className="text-xl self-center text-purple-900 font-semibold">Olympics</h1>
+        <h1 className="text-xl self-center text-purple-900 font-semibold">
+          Olympics
+        </h1>
 
         <Image
           loading="lazy"
@@ -43,7 +45,9 @@ export default function Home() {
         <p className="text-purple-900 font-bold">Made by:</p>
         {["Prashoon (C)", "Monish", "Hussain", "Nirav", "Kanika"].map(
           (name) => (
-            <p className="text-base font-semibold text-purple-900">★ {name}</p>
+            <p key={name} className="text-base font-semibold text-purple-900">
+              ★ {name}
+            </p>
           )
         )}
       </footer>
